@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T17:50:47.630648+00:00",
+  "title": "Design System: Spoolhand",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Handbook Paper",
+        "canonical": "#F4F1E8",
+        "tonalRamp": [
+          "#2E2A1E",
+          "#504830",
+          "#776941",
+          "#A58F50",
+          "#B9A979",
+          "#CAC1A5",
+          "#DFDACE",
+          "#F4F3F0"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#262626",
+          "#404040",
+          "#5C5C5C",
+          "#7A7A7A",
+          "#999999",
+          "#B8B8B8",
+          "#D6D6D6",
+          "#F2F2F2"
+        ]
+      },
+      "sunken": {
+        "role": "neutral",
+        "displayName": "Sunken Tan",
+        "canonical": "#EAE5D7",
+        "tonalRamp": [
+          "#2D2A1F",
+          "#4E4632",
+          "#746744",
+          "#A08C55",
+          "#B5A67D",
+          "#C8BFA7",
+          "#DEDACF",
+          "#F4F3F0"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#16181B",
+        "tonalRamp": [
+          "#242629",
+          "#3B3F44",
+          "#545A64",
+          "#6E7887",
+          "#9097A2",
+          "#B2B7BD",
+          "#D4D6D9",
+          "#F2F2F3"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Pencil Grey",
+        "canonical": "#5F5E57",
+        "tonalRamp": [
+          "#272725",
+          "#42413E",
+          "#5F5E58",
+          "#807E75",
+          "#9D9C95",
+          "#BAB9B5",
+          "#D7D7D5",
+          "#F3F2F2"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Tan Hairline",
+        "canonical": "#CFC8B6",
+        "tonalRamp": [
+          "#2B2822",
+          "#494437",
+          "#6C634C",
+          "#938562",
+          "#ACA186",
+          "#C2BCAD",
+          "#DBD8D1",
+          "#F3F3F1"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Safety Yellow",
+        "canonical": "#F2C230",
+        "tonalRamp": [
+          "#3A3013",
+          "#675418",
+          "#9F7E18",
+          "#E4B011",
+          "#E8C14A",
+          "#E6CF89",
+          "#EBE1C1",
+          "#F7F5ED"
+        ]
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "Ink on Yellow",
+        "canonical": "#16181B",
+        "tonalRamp": [
+          "#242629",
+          "#3B3F44",
+          "#545A64",
+          "#6E7887",
+          "#9097A2",
+          "#B2B7BD",
+          "#D4D6D9",
+          "#F2F2F3"
+        ]
+      },
+      "source": {
+        "role": "neutral",
+        "displayName": "Olive Provenance",
+        "canonical": "#6B580F",
+        "tonalRamp": [
+          "#373016",
+          "#61541E",
+          "#957E22",
+          "#D4AF20",
+          "#DDC155",
+          "#DFCF90",
+          "#E8E1C4",
+          "#F7F5EE"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Signal Red",
+        "canonical": "#B3261E",
+        "tonalRamp": [
+          "#361816",
+          "#602320",
+          "#922B25",
+          "#D02E25",
+          "#D96059",
+          "#DD9692",
+          "#E7C7C5",
+          "#F6EFEE"
+        ]
+      },
+      "segment-on": {
+        "role": "neutral",
+        "displayName": "Selected Segment",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#262626",
+          "#404040",
+          "#5C5C5C",
+          "#7A7A7A",
+          "#999999",
+          "#B8B8B8",
+          "#D6D6D6",
+          "#F2F2F2"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Handbook Paper (dark)",
+        "canonical": "#1C1D1F",
+        "tonalRamp": [
+          "#252627",
+          "#3D3F42",
+          "#585B60",
+          "#747880",
+          "#94979E",
+          "#B5B7BA",
+          "#D5D6D7",
+          "#F2F2F3"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Card White (dark)",
+        "canonical": "#26282B",
+        "tonalRamp": [
+          "#252628",
+          "#3D3F43",
+          "#575B61",
+          "#737982",
+          "#93989F",
+          "#B4B7BB",
+          "#D5D6D8",
+          "#F2F2F3"
+        ]
+      },
+      "sunken-dark": {
+        "role": "neutral",
+        "displayName": "Sunken Tan (dark)",
+        "canonical": "#2F3135",
+        "tonalRamp": [
+          "#252628",
+          "#3D3F42",
+          "#575A60",
+          "#737882",
+          "#94979E",
+          "#B4B7BB",
+          "#D5D6D8",
+          "#F2F2F3"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink (dark)",
+        "canonical": "#F1EEE6",
+        "tonalRamp": [
+          "#2D2920",
+          "#4C4533",
+          "#716646",
+          "#9C8A59",
+          "#B2A580",
+          "#C6BEA9",
+          "#DDD9CF",
+          "#F4F3F1"
+        ]
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Pencil Grey (dark)",
+        "canonical": "#A3A097",
+        "tonalRamp": [
+          "#282725",
+          "#42413D",
+          "#605E57",
+          "#827E73",
+          "#9E9C94",
+          "#BBB9B4",
+          "#D8D7D5",
+          "#F3F2F2"
+        ]
+      },
+      "border-dark": {
+        "role": "neutral",
+        "displayName": "Tan Hairline (dark)",
+        "canonical": "#3A3C40",
+        "tonalRamp": [
+          "#252627",
+          "#3E3F42",
+          "#585B60",
+          "#757880",
+          "#95989D",
+          "#B5B7BA",
+          "#D5D6D7",
+          "#F2F2F3"
+        ]
+      },
+      "source-dark": {
+        "role": "neutral",
+        "displayName": "Olive Provenance (dark)",
+        "canonical": "#D4B44A",
+        "tonalRamp": [
+          "#342E19",
+          "#5B4E24",
+          "#8B752D",
+          "#C4A231",
+          "#D0B762",
+          "#D8C997",
+          "#E5DEC7",
+          "#F6F4EF"
+        ]
+      },
+      "error-dark": {
+        "role": "error",
+        "displayName": "Signal Red (dark)",
+        "canonical": "#FF6B5E",
+        "tonalRamp": [
+          "#3C1410",
+          "#6C1A13",
+          "#A81C0F",
+          "#F21603",
+          "#F34E3F",
+          "#EC8C83",
+          "#EEC2BE",
+          "#F8EDEC"
+        ]
+      },
+      "segment-on-dark": {
+        "role": "neutral",
+        "displayName": "Selected Segment (dark)",
+        "canonical": "#3A3C40",
+        "tonalRamp": [
+          "#252627",
+          "#3E3F42",
+          "#585B60",
+          "#757880",
+          "#95989D",
+          "#B5B7BA",
+          "#D5D6D7",
+          "#F2F2F3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero H1 only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page H1 (2.875rem at 900px+); H2 at 1.875rem / 2.125rem."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3, steps summary, result label."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose in the system face."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table headers, captions, disclaimers, source lines."
+      },
+      "numeral-result": {
+        "displayName": "Result numeral",
+        "purpose": "The answer; 4.25rem at 900px+."
+      },
+      "numeral-field": {
+        "displayName": "Field numeral",
+        "purpose": "Input values and units."
+      },
+      "numeral-row": {
+        "displayName": "Row numeral",
+        "purpose": "Result rows; spec bar and chips use 1.375rem."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 1px 2px rgb(22 24 27 / 0.10), 0 2px 8px -2px rgb(22 24 27 / 0.10)",
+        "purpose": "Selected segment only. Dark: rgb(0 0 0 / 0.4)."
+      },
+      {
+        "name": "shadow-shot",
+        "value": "0 28px 56px -28px rgb(22 24 27 / 0.45)",
+        "purpose": "Real app screenshots and the cut-sheet image. Dark: rgb(0 0 0 / 0.8)."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid var(--ink); outline-offset: 2px",
+        "purpose": "Global focus-visible."
+      }
+    ],
+    "motion": [
+      {
+        "name": "settle",
+        "value": "220ms cubic-bezier(0.16, 1, 0.3, 1); from translateY(5px) opacity 0.35",
+        "purpose": "Result value on every new answer; the one authored motion. Off under reduced motion."
+      },
+      {
+        "name": "state-fast",
+        "value": "120–160ms ease-out",
+        "purpose": "Chip press scale 0.96, segment selection, hover fills."
+      },
+      {
+        "name": "disclosure",
+        "value": "200ms ease-out",
+        "purpose": "Chevron rotation on spec bar and steps."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration: 1ms; animation: none",
+        "purpose": "Global under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tiny",
+        "value": "380px (max)"
+      },
+      {
+        "name": "chart-compact",
+        "value": "600px (max)"
+      },
+      {
+        "name": "nav-scroll",
+        "value": "640px (max)"
+      },
+      {
+        "name": "app-block",
+        "value": "760px"
+      },
+      {
+        "name": "home-split",
+        "value": "880px"
+      },
+      {
+        "name": "calc-split",
+        "value": "900px"
+      },
+      {
+        "name": "chart-split",
+        "value": "1000px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Spec Bar",
+      "kind": "custom",
+      "refersTo": "spec-bar",
+      "description": "Safety-yellow pipe-spec sentence that opens the spec panel.",
+      "html": "<button class=\"ds-spec-bar\">6\" · BW LR · gap 1/8\"<svg class=\"ds-chev\" viewBox=\"0 0 24 24\"><path d=\"M6 9l6 6 6-6\"/></svg></button>",
+      "css": ".ds-spec-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:56px;padding:0 16px;border:0;background:var(--accent,#F2C230);color:var(--on-accent,#16181B);border-radius:12px;font:600 1.375rem/1.15 'Barlow Semi Condensed',system-ui,sans-serif;font-variant-numeric:tabular-nums;cursor:pointer}.ds-spec-bar:focus-visible{outline:2px solid #16181B;outline-offset:2px}.ds-chev{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;transition:transform 200ms ease-out}.ds-spec-bar:hover .ds-chev{transform:rotate(180deg)}"
+    },
+    {
+      "name": "Result",
+      "kind": "custom",
+      "refersTo": "result",
+      "description": "The answer: the loudest thing on a calculator page; value settles in 220ms.",
+      "html": "<div class=\"ds-result\"><span class=\"ds-result-label\">Cut length</span><span class=\"ds-result-value\">26-3/16\"</span></div>",
+      "css": ".ds-result{display:flex;flex-direction:column;padding:14px 18px 18px;background:var(--accent,#F2C230);color:var(--on-accent,#16181B);border-radius:12px}.ds-result-label{font:650 1.125rem/1.3 system-ui,sans-serif}.ds-result-value{margin-top:2px;font:700 3.5rem/1 'Barlow Semi Condensed',system-ui,sans-serif;letter-spacing:-0.01em;font-variant-numeric:tabular-nums;animation:ds-settle 220ms cubic-bezier(0.16,1,0.3,1)}@keyframes ds-settle{from{transform:translateY(5px);opacity:.35}}@media (prefers-reduced-motion:reduce){.ds-result-value{animation:none}}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "64px white field: label left, big tabular value right.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Offset</span><input class=\"ds-field-input\" value=\"24\" inputmode=\"decimal\"><span class=\"ds-unit\">\"</span></label>",
+      "css": ".ds-field{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;column-gap:10px;min-height:64px;padding:4px 16px;background:var(--surface,#fff);border:1px solid var(--border,#CFC8B6);border-radius:12px}.ds-field:hover{border-color:var(--ink-2,#5F5E57)}.ds-field:focus-within{border-color:var(--ink,#16181B);box-shadow:0 0 0 1px var(--ink,#16181B)}.ds-field-label{color:var(--ink-2,#5F5E57);font-size:1.125rem}.ds-field-input{width:100%;min-width:0;border:0;background:transparent;color:var(--ink,#16181B);font:700 1.875rem/1.1 'Barlow Semi Condensed',system-ui,sans-serif;font-variant-numeric:tabular-nums;text-align:right;outline:none}.ds-unit{font:700 1.875rem/1.1 'Barlow Semi Condensed',system-ui,sans-serif}"
+    },
+    {
+      "name": "Angle Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "56px common-angle chip; pressed state is sunken with a 2px ink border.",
+      "html": "<div style=\"display:flex;gap:8px\"><button class=\"ds-chip\">30°</button><button class=\"ds-chip\" aria-pressed=\"true\">45°</button></div>",
+      "css": ".ds-chip{min-height:56px;min-width:56px;padding:0 6px;border:1px solid var(--border,#CFC8B6);border-radius:12px;background:var(--surface,#fff);color:var(--ink,#16181B);font:600 1.375rem/1 'Barlow Semi Condensed',system-ui,sans-serif;font-variant-numeric:tabular-nums;cursor:pointer;transition:background-color 140ms ease-out,transform 120ms ease-out}.ds-chip:active{transform:scale(.96)}.ds-chip:focus-visible{outline:2px solid #16181B;outline-offset:2px}.ds-chip[aria-pressed=true]{background:var(--sunken,#EAE5D7);border:2px solid var(--ink,#16181B)}"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented-track",
+      "description": "Sunken track with a lifted selected segment.",
+      "html": "<div class=\"ds-seg\"><button class=\"ds-seg-btn is-on\">Angle</button><button class=\"ds-seg-btn\">Run</button></div>",
+      "css": ".ds-seg{display:flex;gap:4px;padding:4px;background:var(--sunken,#EAE5D7);border-radius:14px}.ds-seg-btn{flex:1;min-height:48px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:var(--ink,#16181B);font:600 1.0625rem system-ui,sans-serif;cursor:pointer;transition:background-color 160ms ease-out,box-shadow 160ms ease-out}.ds-seg-btn:hover{background:rgb(255 255 255 / .5)}.ds-seg-btn:focus-visible{outline:2px solid #16181B;outline-offset:1px}.ds-seg-btn.is-on{background:var(--segment-on,#fff);box-shadow:0 1px 2px rgb(22 24 27 / .10),0 2px 8px -2px rgb(22 24 27 / .10)}"
+    },
+    {
+      "name": "App Store Button (live)",
+      "kind": "button",
+      "refersTo": "store-button",
+      "description": "Ink button for the live App Store link.",
+      "html": "<a class=\"ds-store\" href=\"#\"><span class=\"ds-store-line\">Get it on the App Store</span><span class=\"ds-store-sub\">$19.99 once · iPhone and iPad</span></a>",
+      "css": ".ds-store{display:inline-flex;flex-direction:column;justify-content:center;gap:2px;min-height:56px;padding:10px 20px;border-radius:12px;background:var(--ink,#16181B);color:var(--paper,#F4F1E8);text-decoration:none}.ds-store:hover,.ds-store:focus-visible{outline:none;box-shadow:0 0 0 3px var(--paper,#F4F1E8),0 0 0 5px var(--ink,#16181B)}.ds-store-line{font:700 1.25rem/1.1 'Barlow Semi Condensed',system-ui,sans-serif}.ds-store-sub{font-size:.875rem;opacity:.86}"
+    },
+    {
+      "name": "App Store Label (coming soon)",
+      "kind": "button",
+      "refersTo": "store-soon",
+      "description": "Outlined, non-interactive label before the app is live.",
+      "html": "<p class=\"ds-store-soon\"><span class=\"ds-store-line\">Coming soon to the App Store</span><span class=\"ds-store-sub\">$19.99 once · iPhone and iPad</span></p>",
+      "css": ".ds-store-soon{display:inline-flex;flex-direction:column;justify-content:center;gap:2px;min-height:56px;margin:0;padding:10px 20px;border-radius:12px;background:transparent;color:var(--ink,#16181B);box-shadow:inset 0 0 0 1.5px var(--border,#CFC8B6)}.ds-store-soon .ds-store-line{font:700 1.25rem/1.1 'Barlow Semi Condensed',system-ui,sans-serif}.ds-store-soon .ds-store-sub{font-size:.875rem;color:var(--ink-2,#5F5E57)}"
+    },
+    {
+      "name": "Tool List",
+      "kind": "card",
+      "refersTo": "tool-row",
+      "description": "One divided white list of tools; never three cards.",
+      "html": "<ul class=\"ds-tools\"><li><a class=\"ds-tool\" href=\"#\"><span><span class=\"ds-tool-name\">Pipe offset</span><span class=\"ds-tool-line\">Cut length for a two-elbow offset.</span></span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\"><path d=\"M9 6l6 6-6 6\"/></svg></a></li><li><a class=\"ds-tool\" href=\"#\"><span><span class=\"ds-tool-name\">Rolling offset</span><span class=\"ds-tool-line\">True offset, travel and roll.</span></span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\"><path d=\"M9 6l6 6-6 6\"/></svg></a></li></ul>",
+      "css": ".ds-tools{list-style:none;margin:0;padding:0;background:var(--surface,#fff);border-radius:12px;overflow:hidden}.ds-tools li+li{border-top:1px solid var(--border,#CFC8B6)}.ds-tool{display:grid;grid-template-columns:minmax(0,1fr) 20px;align-items:center;gap:18px;min-height:92px;padding:14px 18px;color:var(--ink,#16181B);text-decoration:none}.ds-tool:hover,.ds-tool:focus-visible{background:var(--sunken,#EAE5D7);outline:none}.ds-tool-name{display:block;font:700 1.5rem/1.1 'Barlow Semi Condensed',system-ui,sans-serif}.ds-tool-line{display:block;margin-top:4px;color:var(--ink-2,#5F5E57)}.ds-arrow{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Text pills; current page is an ink underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Pipe offset</a><a href=\"#\">Rolling offset</a><a href=\"#\">Takeout chart</a></nav>",
+      "css": ".ds-nav{display:flex;gap:4px}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:10px;color:var(--ink,#16181B);font-weight:550;text-decoration:none;white-space:nowrap}.ds-nav a:hover{background:var(--sunken,#EAE5D7)}.ds-nav a:focus-visible{outline:2px solid #16181B;outline-offset:2px}.ds-nav a[aria-current=page]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.35em}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pocket Handbook",
+    "overview": "Every page is a page of the app's pocket handbook, not a software landing page. The system is the app's Blue Book world carried onto the web: warm paper ground, ink text, white cards with a tan outline, a sunken tan panel for worked steps, olive provenance lines under every reference value, and ink line diagrams with dashed dimension lines. On calculator pages the answer is the loudest thing on screen, and it is the only other place the safety yellow appears besides the pipe-spec bar.\n\nDensity is set by gloved thumbs on a phone outdoors: targets are 56px where they are tapped mid-task, 44px minimum everywhere else, numerals are big, condensed and tabular so fractions to 1/16\" line up. The home page persuades (Persuade mode); calculator pages operate (Operate mode). Both share one token set; neither borrows the hero-with-phone-mockup-and-three-feature-cards template.",
+    "keyCharacteristics": [
+      "Warm paper, ink, and one safety yellow reserved for the spec bar and the result.",
+      "Condensed tabular numerals for every number; system-ui for prose.",
+      "12px corners on every card-like container; tan hairlines instead of shadows.",
+      "Provenance is visual: olive source lines sit under the values they justify.",
+      "Ink line diagrams that relabel live as inputs change.",
+      "Light, dark, and high-contrast are first-class, driven by the same custom properties."
+    ],
+    "rules": [
+      {
+        "name": "The Two Yellows Rule",
+        "body": "Safety yellow appears in exactly two places per calculator page: the pipe-spec bar and the result. Selection highlight (::selection) is the only other use. A third yellow surface means the answer is no longer the loudest thing.",
+        "section": "colors"
+      },
+      {
+        "name": "The Provenance Color Rule",
+        "body": "Olive is reserved for where a value came from. It never colors a heading, a link, or a decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Every-Number-Is-Barlow Rule",
+        "body": "Any measurement, fraction, size or angle is set in the numeral face with tabular figures, including inline numbers in prose (`.num`, `.formula`). Prose words stay in system-ui.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stacked Fraction Rule",
+        "body": "Angle chips set fractions as superscript/subscript glyph pairs at 0.62em, never as slashed text that wraps.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper-Not-Plastic Rule",
+        "body": "Cards sit flat on paper. A drop shadow on a card, chip or result is wrong; use a hairline or a tonal step instead.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep yellow to the spec bar and the result; everything else is paper, white, sunken and ink.",
+      "Do set every number in Barlow Semi Condensed with tabular figures.",
+      "Do put an olive source line under any reference value that came from a catalog.",
+      "Do keep tap targets at 56px for in-task controls (spec bar, chips, store button) and never below 44px.",
+      "Do present tool links as one divided white list.",
+      "Do show \"Coming soon\" as an outlined label and the live App Store link as an ink button.",
+      "Do disable the result settle and all transitions under `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "Don't use the hero-with-phone-mockup-and-three-feature-cards arrangement, or split tool links into three cards.",
+      "Don't add a third yellow surface, a yellow button, or yellow on links.",
+      "Don't put drop shadows on cards, chips, fields or the result; the lift shadow belongs to the selected segment only.",
+      "Don't introduce another corner radius for containers; cards are 12px.",
+      "Don't set fractions as slashed text in chips, or numbers in system-ui.",
+      "Don't add authored motion beyond the result settle and the 120–220ms state transitions."
+    ]
+  }
+}
