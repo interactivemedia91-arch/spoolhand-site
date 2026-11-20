@@ -76,3 +76,14 @@ test('refusals say what to fix', () => {
     'Enter the takeout of one elbow.');
   assert.equal(solve('offset', { offset: 24, angle: 45, mode: 'angle' }, { ...spec6, gap: undefined }).refused, 'invalid');
 });
+
+test('the 3/4" long-radius elbow carries its row note; other sizes, short radius and a measured takeout don\'t', () => {
+  const spec = { size: size('3/4'), elbow: 'lr', gap: 0.125 };
+  const offset = solve('offset', { offset: 12, angle: 45, mode: 'angle' }, spec);
+  assert.equal(offset.notes.length, 1);
+  assert.match(offset.notes[0], /1-1\/8" \(29 mm\)/);
+  assert.deepEqual(solve('rolling', { set: 12, roll: 8, angle: 30, mode: 'angle' }, spec).notes, offset.notes);   // cut from the same 90
+  assert.deepEqual(solve('offset', { offset: 24, angle: 45, mode: 'angle' }, spec6).notes, []);
+  assert.deepEqual(solve('offset', { offset: 12, angle: 45, mode: 'angle' }, { ...spec, elbow: 'custom', takeout: 0.5 }).notes, []);
+  assert.equal(solve('offset', { mode: 'angle' }, spec).notes, undefined);                                       // refused: nothing to note
+});

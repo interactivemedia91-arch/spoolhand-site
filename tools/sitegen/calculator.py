@@ -96,6 +96,7 @@ def result_block(solved: dict) -> str:
   <p class="result-message" data-message hidden></p>
 </div>
 <dl class="rows" data-rows>{rows}</dl>
+<p class="table-note" data-table-note{"" if solved.get("notes") else " hidden"}>{esc(" ".join(solved.get("notes", [])))}</p>
 <div class="marks" data-marks{"" if solved["marks"] else " hidden"}>
   <p class="marks-title">Mark the 90 before cutting it to the angle</p>
   <dl class="rows" data-mark-rows>{marks}</dl>

@@ -3,6 +3,7 @@
 Run: python3 -I -m unittest discover -s tests -p 'test_*.py'
 """
 
+import html as htmllib
 import json
 import re
 import sys
@@ -77,6 +78,21 @@ class BuiltSite(unittest.TestCase):
             expected = [fraction_text(row["cells"][c]["number"]).replace('"', "&quot;")
                         for c in ("lr90", "lr45", "sr90") if c in row["cells"]]
             self.assertEqual(shown, expected, nps)
+
+    def test_row_notes_show_under_their_size(self):
+        html = self.html["elbow-takeout-chart/index.html"]
+        elbows = next(t for t in self.reference["tables"] if t["id"] == "bw-elbows")
+        self.assertIn("3/4", elbows.get("rowNotes", {}))           # the shorter 3/4" elbow some makers build
+        for nps, notes in elbows["rowNotes"].items():
+            row = re.search(rf'<tr id="nps-{re.escape(nps)}">(.*?)</tr>', html).group(1)
+            self.assertIn(f'href="#note-{nps.replace("/", "-")}"', row)
+            for note in notes:
+                self.assertIn(f'<li id="note-{nps.replace("/", "-")}">{htmllib.escape(note)}</li>', html)
+        self.assertEqual(html.count('class="note-ref"'), 2)        # the 90 and the 45 of that size, nothing else
+
+    def test_calculators_have_one_table_note_slot(self):                 # page.js fills the first match
+        for name in ("pipe-offset-calculator/index.html", "rolling-offset-calculator/index.html"):
+            self.assertEqual(self.html[name].count("data-table-note"), 1, name)
 
     def test_calculators_open_solved(self):
         self.assertIn('data-cut aria-live="polite">26-3/16&quot;</output>', self.html["pipe-offset-calculator/index.html"])

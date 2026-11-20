@@ -17,7 +17,10 @@ function provenance(cell, standard) {
   return `${standard} · ${count} ${count === 1 ? 'catalog' : 'catalogs'}`;
 }
 
-/** One entry per elbow size: center-to-end values with their provenance, and the pipe's OD when known. */
+/**
+ * One entry per elbow size: center-to-end values with their provenance, the pipe's OD when known, and the
+ * size's own notes (some makers build the 3/4" long-radius elbow shorter).
+ */
 export function elbowSizes(reference) {
   const table = (id) => reference.tables.find((t) => t.id === id);
   const elbows = table('bw-elbows');
@@ -31,7 +34,10 @@ export function elbowSizes(reference) {
       return cell ? { value: cell.number, source: provenance(cell, elbows.standard), sources: cell.sources } : null;
     };
     const nps = row.key.nps;
-    return { nps, dn: DN[nps], od: od.get(nps) ?? null, lr90: value('lr90'), lr45: value('lr45'), sr90: value('sr90') };
+    return {
+      nps, dn: DN[nps], od: od.get(nps) ?? null, lr90: value('lr90'), lr45: value('lr45'), sr90: value('sr90'),
+      notes: elbows.rowNotes?.[nps] ?? [],
+    };
   });
 }
 

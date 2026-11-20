@@ -42,7 +42,8 @@ const MESSAGES = {
  * Solves a simple (`kind` "offset") or rolling ("rolling") offset.
  * `fields`: inches and degrees, `mode` "angle" | "run" | "travel" (the third known).
  * `spec`: `{ size, elbow: "lr" | "sr" | "custom", takeout?, gap }`, lengths in inches.
- * Returns `{ refused, message }` or `{ cut, rows, marks, steps }`, every string ready to show.
+ * Returns `{ refused, message }` or `{ cut, rows, marks, steps, notes }`, every string ready to show;
+ * `notes` are the long-radius elbow's own notes for the size, as the app shows under its table values.
  */
 export function solve(kind, fields, spec, units = 'in') {
   const solver = kind === 'rolling' ? rollingOffset : simpleOffset;
@@ -126,5 +127,6 @@ export function solve(kind, fields, spec, units = 'in') {
     { label: 'Outside', value: showLength(result.outer, units) },
   ];
 
-  return { cut: showLength(result.cut, units), rows, marks, steps, angle: result.angle, values: result };
+  const notes = spec.elbow === 'lr' ? spec.size.notes ?? [] : [];
+  return { cut: showLength(result.cut, units), rows, marks, steps, notes, angle: result.angle, values: result };
 }

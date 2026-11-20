@@ -10549,6 +10549,11 @@
         "Center to end is the takeout of the fitting: from the center line to the weld end.",
         "Long-radius 90° elbows from 22\" up without catalog values are derived from the radius: A = 1.5 × NPS."
       ],
+      "rowNotes" : {
+        "3/4" : [
+          "Some makers build the 3/4\" long-radius elbow shorter: 1-1/8\" (29 mm) center to end on the 90°, 7/16\" (11 mm) on the 45° (Vulcan's catalog). Measure the fitting in hand."
+        ]
+      },
       "rows" : [
         {
           "cells" : {

@@ -226,8 +226,10 @@ ELBOW_FIGURE = """<svg viewBox="0 -16 500 246" role="img" aria-label="A is the c
 def chart_page(data: dict, reference: dict, chart_text: dict) -> dict:
     rows = []
     calc_sizes = set(data["calculatorSizes"])
+    row_notes = next(t for t in reference["tables"] if t["id"] == "bw-elbows").get("rowNotes", {})
     for size in data["sizes"]:
         nps = size["nps"]
+        slug = nps.replace("/", "-")
         cells = []
         for column in ("lr90", "lr45", "sr90"):
             cell = size[column]
@@ -236,8 +238,11 @@ def chart_page(data: dict, reference: dict, chart_text: dict) -> dict:
                 continue
             inches, millimeters = chart_text[nps][column]
             note = "derived" if cell["source"].startswith("Derived") else f'{len(cell["sources"])} catalogs'
+            # The size's own note (some makers build the 3/4" LR elbow shorter) applies to long-radius values.
+            ref = (f' · <a class="note-ref" href="#note-{esc(slug)}">see note</a>'
+                   if nps in row_notes and column != "sr90" else "")
             cells.append(f'<td><span class="in">{esc(inches)}</span><span class="mm">{esc(millimeters)}</span>'
-                         f'<span class="prov">{esc(note)}</span></td>')
+                         f'<span class="prov">{esc(note)}{ref}</span></td>')
         use = (f'<a href="/pipe-offset-calculator/?nps={esc(nps)}">Offset</a>'
                f'<a href="/rolling-offset-calculator/?nps={esc(nps)}">Rolling</a>') if nps in calc_sizes else ""
         inline = f'<span class="use-inline">{use}</span>' if use else ""
@@ -277,6 +282,7 @@ def chart_page(data: dict, reference: dict, chart_text: dict) -> dict:
       <li>Long-radius 90s from 22" up without a catalog value are derived from the radius: A = 1.5 × NPS. They're marked derived.</li>
       <li>Short-radius 90s have A equal to the nominal size; there's no short-radius 45 in the catalogs.</li>
       <li>A short line means the catalogs don't list that size.</li>
+      {"".join(f'<li id="note-{esc(nps.replace("/", "-"))}">{esc(text)}</li>' for nps, texts in row_notes.items() for text in texts)}
     </ul>
   </section>
   <section aria-labelledby="sources">

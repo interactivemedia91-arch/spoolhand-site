@@ -125,6 +125,9 @@ function setUp(root) {
     const rows = el('[data-rows]');
     rows.hidden = Boolean(solved.refused);
     rows.replaceChildren(...(solved.rows ?? []).map(row));
+    const note = el('[data-table-note]');
+    note.hidden = !solved.notes?.length;
+    note.textContent = (solved.notes ?? []).join(' ');
     el('[data-marks]').hidden = !solved.marks?.length;
     el('[data-mark-rows]').replaceChildren(...(solved.marks ?? []).map(row));
     el('[data-steps]').closest('details').hidden = Boolean(solved.refused);
