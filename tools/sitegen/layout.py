@@ -11,8 +11,8 @@ DISCLAIMER = "Verify critical dimensions against the current standard before fab
 
 # Set at release (plan Task 10): the App Store page and the provider token, so the button links
 # with a campaign (`ct=site-<page>`) that App Store Connect counts without analytics on the site.
-APP_STORE_URL = None
-PROVIDER_TOKEN = None
+APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6837216630"
+PROVIDER_TOKEN = "129114170"
 
 
 def esc(text) -> str:
